@@ -12,14 +12,9 @@ use App\Http\Controllers\PageController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-//Route passing variables to view
-/* Route::get('/', function(){
-    return view('subview.master');
-   }); //done
-*/
+
 Route::get('/', 'App\Http\Controllers\PageController@master');
 Route::get('/about', 'App\Http\Controllers\PageController@about');
 Route::get('/list', 'App\Http\Controllers\PageController@list');
 
-//Route::get('/',  [PageController::class, 'about'] );
 
